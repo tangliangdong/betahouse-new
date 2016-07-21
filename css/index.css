@@ -1,0 +1,218 @@
+a{
+	text-decoration: none;
+}
+
+.content .main{
+	overflow: hidden;
+
+}
+.content .main .main_ul .pages{
+	height: 100%;
+	width: 100%;
+	display: block;
+	background: #eee;
+	position: absolute;
+	overflow: hidden;
+	-webkit-transition: 1s;
+	-o-transition: 1s;
+	transition: 1s;
+}
+/*第一个页面*/
+.content .main .main_ul .page1{
+	background: url(../img/index.jpg);
+	background-size: cover;
+	z-index: 11;
+
+}
+
+.content .main .logo{
+	width: 80px;
+	position: absolute;
+	left: 50%;
+	top: 25%;
+	-webkit-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	-o-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+}
+.content .main .betahouse_name{
+	font-size: 2.2em;
+	color: #fff;
+	font-family: Georgia, "Times New Roman", 
+             "Microsoft YaHei", "微软雅黑", 
+             STXihei, "华文细黑", 
+             serif;
+    letter-spacing: .4em;
+    position: absolute;
+    left: 50%;
+    top: 48%;
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+
+    text-shadow: 2px 3px 1px #000;
+}
+
+
+/*第二个页面*/
+.content .main .main_ul .page2{
+	background: url(../img/page2.jpg) no-repeat;
+	opacity: 0;
+	z-index: 1;
+}
+.page2 .beta_do{
+	position: absolute;
+	top: 13%;
+	right: 25%;
+	transform: translateX(50%);
+	width: 200px;
+	height: 900px;
+	z-index: 10;
+}
+.page2 .changeImg{
+	display: none;
+	opacity: 0;
+	position: absolute;
+	width: 500px;
+	height: 520px;
+	left: 20%;
+	top: 15%;
+	border: none;
+}
+
+.page2 .beta_do li{
+	border-radius: .2em;
+	float: left;
+	margin: 5px 0;
+	overflow: hidden;
+	display: block;
+	border: 2px outset #f00;
+	width: 140px;
+	height: 140px;
+	transition: 1s box-shadow ease;
+}
+.page2 .beta_do li:hover{
+	box-shadow: 0 0 20px #eee;
+}
+.page2 .beta_do img{
+	width: 140px;
+	height: 140px;
+}
+
+
+
+/*第三个页面*/
+.content .main .main_ul .page3{
+	opacity: 0;
+	z-index: -1;
+}
+
+/*按钮样式*/
+.content .main .control{
+	position: fixed;
+	width: 100%;
+	height: 100px;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	transform: translateY(-50%);
+	z-index: 100;
+	border:4px solid #C12D1C;
+	border-radius: 2px;
+	width: 40px;
+	height: 40px;
+	background: transparent;
+}
+.content .main .navPrev{
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	transform: rotate(45deg);
+	border-right-color: transparent;
+	border-top-color: transparent;
+	left: 2%;
+}
+
+.content .main .navNext{
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	transform: rotate(45deg);
+	right: 2%;
+	border-left-color: transparent;
+	border-bottom-color: transparent;
+
+}
+.content .main .navNext:hover{
+	border-color:  #F0382F #F0382F transparent transparent;
+}
+
+.content .main .navPrev:hover{
+	border-color: transparent transparent #F0382F #F0382F ;
+}
+
+/*链接样式*/
+.content .main .chaining{
+	position: absolute;
+	top: 5%;
+	left: 8%;
+	width: 200px;
+	height: 30px;
+	z-index: 100;
+}
+
+.content .main .chaining li{
+	float: left;
+	margin: 0 2%;
+	font-size: .8em;
+	line-height: 20px;
+	letter-spacing: .4em;
+	-webkit-transform: translate3d(-3000px, 0, 0);
+    transform: translate3d(-3000px, 0, 0);
+}
+
+.content .main .chaining li a{
+	display: block;
+	width: 40px;
+	text-align: center;
+	color: #fff;
+}
+
+
+.content .main .chaining li a:hover{
+	border-bottom: 1px solid #fff;
+	text-decoration: none;
+}
+.content .main .about_us{
+	z-index: 100;
+	position: fixed;
+	right: 6%;
+	top: 5.4%;
+	width: 300px;
+	height: 40px;
+	transform: translate(50%);
+	
+}
+
+.content .main .about_us li{
+	float: left;
+	margin: 0 2%;
+	-webkit-transform: translate3d(3000px, 0, 0);
+    transform: translate3d(3000px, 0, 0);
+}
+
+.content .main .about_us li a{
+	display: block;
+	line-height: 20px;
+	color: #fff;
+	width: 70px;
+	font-size: .8em;
+	letter-spacing: .3em;
+	text-align: center;
+}
+.content .main .about_us li a:hover{
+	border-bottom: 1px solid #fff;
+	text-decoration: none;
+}

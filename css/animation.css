@@ -290,3 +290,92 @@
   -webkit-animation-name: bounceInRight;
   animation-name: bounceInRight;
 }
+
+@-webkit-keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-50%, 100%, 0);
+    transform: translate3d(-50%, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}
+
+@-webkit-keyframes fadeOutDown {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(-50%, 100%, 0);
+    transform: translate3d(-50%, 100%, 0);
+  }
+}
+
+@keyframes fadeOutDown {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(-50%, 100%, 0);
+    transform: translate3d(-50%, 100%, 0);
+  }
+}
+
+.fadeOutDown {
+  -webkit-animation-name: fadeOutDown;
+  animation-name: fadeOutDown;
+}
+
+
+/*DIY*/
+.worddown{
+    -webkit-animation-name: wordDown;
+    -o-animation-name: wordDown;
+    animation-name: wordDown;
+    -webkit-animation-duration: 2s;
+    -o-animation-duration: 2s;
+    animation-duration: 2s;
+}
+
+@keyframes wordDown{
+    0%{
+        transform:translateY(-500px) rotate(-35deg); 
+    }
+    30%{
+        transform: translateY(0) rotate(-10deg); 
+    }
+    40%{
+        transform: translateY(-3px) rotate(13deg);
+    }
+    50%{
+        transform: translateY(0px) rotate(0deg);
+    }
+    /*to {
+       transform: translateY(-50%);
+    }*/
+}

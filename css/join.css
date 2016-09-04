@@ -1,0 +1,129 @@
+body
+{
+    background: url('../img/wallhaven-143.jpg') no-repeat;
+    background-clip: cover;
+}
+textarea
+{
+    font-size: 2rem;
+
+    resize: none;
+
+    box-shadow: 1px 1px 1px #a8aa9b inset;
+}
+textarea,
+input
+{
+    width: 90%;
+    padding: 4px 4px;
+
+    color: #42B7D9;
+    border-radius: 4px;
+}
+header h1,
+header h2
+{
+	word-spacing: 1.4rem;
+    text-align: center;
+
+    text-shadow: .5px .5px 0 #30312b;
+}
+header h2{
+	letter-spacing: .2rem;
+}
+
+header h1
+{
+	letter-spacing: .3rem;
+    margin-top: 40px;
+}
+.content
+{
+    margin: 0 8%;
+}
+.content .leftContent
+{
+    display: inline-block;
+
+    width: 42%;
+}
+.content .rightContent
+{
+    display: inline-block;
+    float: right;
+
+    width: 42%;
+}
+.content p
+{
+    font-size: 1.2rem;
+    font-weight: bolder;
+
+    margin: 30px 0 10px 0;
+
+    color: #ff1e1e;
+}
+.content button
+{
+    font-size: 1rem;
+
+    position: relative;
+    left: 30%;
+
+    clear: both;
+
+    margin: 30px auto 20px;
+    padding: 5px 20px;
+
+    text-align: center;
+
+    border-radius: 4px;
+    background: #31cadb;
+}
+
+input
+{
+    font-size: 1rem;
+
+    border-radius: 4px;
+}
+@media screen and (max-width: 900px) and (min-width: 701px){
+	textarea,
+	input
+	{
+	    width: 100%;
+	}
+	.content
+	{
+	    margin: 0 6%;
+	}
+	.content .leftContent
+	{
+	    display: inline-block;
+
+	    width: 44%;
+	}
+	.content .rightContent
+	{
+	    display: inline-block;
+	    float: right;
+
+	    width: 44%;
+	}
+}
+
+@media screen and (max-width: 700px){
+	.content .leftContent
+	{
+	    display: block;
+
+	    width: 100%;
+	}
+	.content .rightContent
+	{
+	    display: block;
+
+	    width: 100%;
+	}
+	
+}

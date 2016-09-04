@@ -1,3 +1,4 @@
+
 var fullscreen = (function(){
 	var $items = $('.main .main_ul .pages'),
 		$itemcounts = $items.length,
@@ -145,11 +146,13 @@ var fullscreen = (function(){
 })();
 // 左侧图片一段时间后消失
 function fadeOutImg(){
-	$('.changeImg').animate({'opacity':0}, 500);
+	$('.changeImg').animate({'opacity':0}, 500,function(){
+		$(this).css('display', 'none');
+	});
 
 	$('.changediv .mark').addClass('fadeOutDown').removeClass('fadeInUp');
 }
-
+//page2 字体掉落效果
 function wordfall(wordIndex){
 	var words = $('.changediv em');
 	words.eq(wordIndex).css('opacity', '1');
@@ -158,5 +161,4 @@ function wordfall(wordIndex){
 	if(wordIndex < words.length){
 		setTimeout('wordfall('+wordIndex+')',300);
 	}
-	
 }
